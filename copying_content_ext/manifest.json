@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "content copying",
+    "description": "copy content  with a single click.",
+    "version": "0.1",
+    "author": "Onkar",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "clipboardRead",
+        "clipboardWrite",
+        "contextMenus"
+    ],
+    "action": {
+        "default_title": "copy content ",
+        "default_popup": "index.html"
+    }
+}
